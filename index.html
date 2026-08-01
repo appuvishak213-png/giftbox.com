@@ -4,252 +4,326 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>GiftBox.com | Gifts, Jewellery & Stationery</title>
+<title>GiftBox.com</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-body{
-    background:#fff8f3;
-    color:#333;
-}
-
-header{
-    background:#111;
-    color:white;
-    padding:20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:bold;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:15px;
-}
-
-.hero{
-    padding:50px 20px;
-    text-align:center;
-    background:linear-gradient(135deg,#ffd6e8,#fff);
-}
-
-.hero h1{
-    font-size:42px;
-}
-
-.hero p{
-    margin:15px 0;
-    font-size:18px;
-}
-
-.btn{
-    display:inline-block;
-    padding:12px 25px;
-    background:#111;
-    color:white;
-    border-radius:25px;
-    text-decoration:none;
-}
-
-.products{
-    padding:40px 20px;
-}
-
-.products h2{
-    text-align:center;
-    margin-bottom:30px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    border-radius:15px;
-    padding:15px;
-    box-shadow:0 5px 15px #ddd;
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    border-radius:10px;
-}
-
-.card h3{
-    margin:10px 0;
-}
-
-.price{
-    font-size:20px;
-    font-weight:bold;
-}
-
-.order{
-    display:block;
-    margin-top:10px;
-    background:#25D366;
-    color:white;
-    padding:10px;
-    text-align:center;
-    border-radius:20px;
-    text-decoration:none;
-}
-
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<div class="logo">🎁 GiftBox.com</div>
+<header class="header">
+
+<div class="logo">
+🎁 GiftBox.com
+</div>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">Contact</a>
+
+<a href="#gift">Gift</a>
+<a href="#jewellery">Jewellery</a>
+<a href="#dress">Dress</a>
+<a href="#toys">Toys</a>
+
 </nav>
+
+<div class="header-buttons">
+
+<a class="instagram-btn" href="#">
+Instagram
+</a>
+
+<a class="group-btn"
+href="https://chat.whatsapp.com/KjrEu2ZnVQJ4qsvHv52657?mode=gi_t"
+target="_blank">
+Join WhatsApp Group
+</a>
+
+</div>
+
 </header>
 
+<section class="hero">
 
-<section class="/
-<h1>Premium Gifts Made With Love 🎁</h1>
+<div class="hero-content">
 
-<p>Jewellery • Stationery • Unique Gifts For Every Moment</p>
-<a class="btn" href="#products">
+<h1>Find the Perfect Gift</h1>
+
+<p>
+Beautiful Gifts For Every Occasion
+</p>
+
+<a href="#gift" class="shop-btn">
 Shop Now
 </a>
 
-</section>
-
-
-<section class="products" id="products">
-
-<h2>Our Products</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="IMG_0768.png">
-<h3>Premium Gift Item</h3>
-<p class="price">₹299</p>
-<a class="order" 
-<div class="card">
-<img src="IMG_0768.png">
-
-<h3>💎 Jewellery</h3>
-
-<p>Trendy jewellery collections for every occasion.</p>
-
-<a class="btn" href="#">View More</a>
-
-</div>
-</div>
-
-
-<div class="card">
-<img src="gift.jpeg">
-<h3>Gift Collection</h3>
-<p class="price">₹299</p>
-<a class="order" href="#">
-Order on WhatsApp
-<a class="order" href="https://wa.me/916238343639?text=Hello%20GiftBox,%20I%20want%20to%20order%20this%20product" target="_blank">
-
-</a
-</div>
-
-
-
-
-
-</section>
-
-
-<section class="products">
-
-<h2>Why Choose GiftBox?</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<img src="IMG_0768.png">
-
-<h3>🎁 Gifts</h3>
-
-<p>Special gifts to make your moments memorable.</p>
-
-<a class="btn" href="#">View More</a>
-
-
-
-<div class="card">
-<h3>🚚 Easy Ordering</h3>
-<p>Order quickly through WhatsApp.</p>
-</div>
-
 </div>
 
 </section>
 
+<section class="search-section">
+
+<input
+type="text"
+id="search"
+placeholder="Search Products...">
+
+</section>
+
+<section id="gift" class="category">
+
+<div class="category-cover">
+
+<h2>Gift Items</h2>
+
+<p>Premium Collection</p>
+
+</div>
+
+<div class="products">
+
+<!-- Product 1 -->
+
+<div class="card">
+
+<img src="images/gift1.jpg">
+
+<h3>Luxury Gift Box</h3>
+
+<p>₹999</p>
+
+<a
+href="https://wa.me/916238343639?text=Hi%20I%20want%20Luxury%20Gift%20Box">
+Order
+</a>
+
+</div>
+
+<!-- Product 2 -->
+
+<div class="card">
+
+<img src="images/gift2.jpg">
+
+<h3>Birthday Gift</h3>
+
+<p>₹699</p>
+
+<a
+href="https://wa.me/916238343639?text=Hi%20I%20want%20Birthday%20Gift">
+Order
+</a>
+
+</div>
+
+<!-- Product 3 -->
+
+<div class="card">
+
+<img src="images/gift3.jpg">
+
+<h3>Couple Gift</h3>
+
+<p>₹899</p>
+
+<a
+href="https://wa.me/916238343639?text=Hi%20I%20want%20Couple%20Gift">
+Order
+</a>
+
+</div>
+
+<!-- Product 4 -->
+
+<div class="card">
+
+<img src="images/gift4.jpg">
+
+<h3>Premium Hamper</h3>
+
+<p>₹1499</p>
+
+<a
+href="https://wa.me/916238343639?text=Hi%20I%20want%20Premium%20Hamper">
+Order
+</a>
+
+</div>
+
+</div>
+
+<button class="more-btn">
+More Gifts
+</button>
+
+</section>
+<!-- =========================
+JEWELLERY
+========================= -->
+
+<section id="jewellery" class="category">
+
+<div class="category-cover">
+<h2>Jewellery</h2>
+<p>Elegant Collection</p>
+</div>
+
+<div class="products">
+
+<div class="card">
+<img src="images/j1.jpg">
+<h3>Necklace</h3>
+<p>₹799</p>
+<a href="https://wa.me/916238343639?text=I want Necklace">Order</a>
+</div>
+
+<div class="card">
+<img src="images/j2.jpg">
+<h3>Bracelet</h3>
+<p>₹499</p>
+<a href="https://wa.me/916238343639?text=I want Bracelet">Order</a>
+</div>
+
+<div class="card">
+<img src="images/j3.jpg">
+<h3>Ring</h3>
+<p>₹299</p>
+<a href="https://wa.me/916238343639?text=I want Ring">Order</a>
+</div>
+
+<div class="card">
+<img src="images/j4.jpg">
+<h3>Premium Set</h3>
+<p>₹1599</p>
+<a href="https://wa.me/916238343639?text=I want Premium Jewellery Set">Order</a>
+</div>
+
+</div>
+
+<button class="more-btn">More Jewellery</button>
+
+</section>
+
+
+<!-- =========================
+DRESS
+========================= -->
+
+<section id="dress" class="category">
+
+<div class="category-cover">
+<h2>Dress</h2>
+<p>Latest Fashion</p>
+</div>
+
+<div class="products">
+
+<div class="card">
+<img src="images/d1.jpg">
+<h3>Women's Dress</h3>
+<p>₹999</p>
+<a href="https://wa.me/916238343639?text=I want Women's Dress">Order</a>
+</div>
+
+<div class="card">
+<img src="images/d2.jpg">
+<h3>Men Shirt</h3>
+<p>₹799</p>
+<a href="https://wa.me/916238343639?text=I want Men Shirt">Order</a>
+</div>
+
+<div class="card">
+<img src="images/d3.jpg">
+<h3>T-Shirt</h3>
+<p>₹599</p>
+<a href="https://wa.me/916238343639?text=I want T-Shirt">Order</a>
+</div>
+
+<div class="card">
+<img src="images/d4.jpg">
+<h3>Kids Dress</h3>
+<p>₹699</p>
+<a href="https://wa.me/916238343639?text=I want Kids Dress">Order</a>
+</div>
+
+</div>
+
+<button class="more-btn">More Dress</button>
+
+</section>
+
+
+<!-- =========================
+TOYS
+========================= -->
+
+<section id="toys" class="category">
+
+<div class="category-cover">
+<h2>Toys</h2>
+<p>Kids Favourite</p>
+</div>
+
+<div class="products">
+
+<div class="card">
+<img src="images/t1.jpg">
+<h3>Teddy Bear</h3>
+<p>₹599</p>
+<a href="https://wa.me/916238343639?text=I want Teddy Bear">Order</a>
+</div>
+
+<div class="card">
+<img src="images/t2.jpg">
+<h3>Remote Car</h3>
+<p>₹999</p>
+<a href="https://wa.me/916238343639?text=I want Remote Car">Order</a>
+</div>
+
+<div class="card">
+<img src="images/t3.jpg">
+<h3>Building Blocks</h3>
+<p>₹699</p>
+<a href="https://wa.me/916238343639?text=I want Building Blocks">Order</a>
+</div>
+
+<div class="card">
+<img src="images/t4.jpg">
+<h3>Doll Set</h3>
+<p>₹899</p>
+<a href="https://wa.me/916238343639?text=I want Doll Set">Order</a>
+</div>
+
+</div>
+
+<button class="more-btn">More Toys</button>
+
+</section>
+
+
+<!-- FOOTER -->
 
 <footer>
 
+<h2>GiftBox.com</h2>
+
+<p>Instagram : @giftbox.com</p>
+
+<p>
+WhatsApp Group :
+<a href="https://chat.whatsapp.com/KjrEu2ZnVQJ4qsvHv52657?mode=gi_t">
+Join Now
+</a>
+</p>
+
+<p>© 2026 GiftBox.com</p>
 
 </footer>
 
+<script src="script.js"></script>
 
 </body>
 </html>
-</section>
-
-
-<section class="products" id="products">
-    <section class="categories">
-
-
-
-</div>
-</div>
-
-</section>
- <section class="contact">
-
-<h2>Order Your Favourite Gift</h2>
-
-<p>Choose your product and order easily through WhatsApp</p>
-
-<a class="order" href="#" target="_blank">
-📲 Order on WhatsApp
-</a>
-
-<br><br>
-
-<a class="btn" href="#" target="_blank">
-📸 Follow us on Instagram
-</a>
-
-</section>   
