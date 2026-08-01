@@ -3,22 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GiftBox</title>
+
+<title>GiftBox.com | Gifts, Jewellery & Stationery</title>
+
 <style>
-body{font-family:Arial;margin:0;background:#f7f7f7}
-header{background:#ff4d6d;color:#fff;padding:20px;text-align:center}
-main{padding:40px;text-align:center}
-a.btn{display:inline-block;padding:12px 22px;background:#ff4d6d;color:#fff;text-decoration:none;border-radius:25px}
-footer{text-align:center;padding:20px;color:#666}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#fff8f3;
+    color:#333;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+}
+
+.hero{
+    padding:50px 20px;
+    text-align:center;
+    background:linear-gradient(135deg,#ffd6e8,#fff);
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#111;
+    color:white;
+    border-radius:25px;
+    text-decoration:none;
+}
+
+.products{
+    padding:40px 20px;
+}
+
+.products h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:15px;
+    box-shadow:0 5px 15px #ddd;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h3{
+    margin:10px 0;
+}
+
+.price{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.order{
+    display:block;
+    margin-top:10px;
+    background:#25D366;
+    color:white;
+    padding:10px;
+    text-align:center;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
 </style>
 </head>
+
 <body>
-<header><h1>🎁 GiftBox</h1><p>Jewellery • Stationery • Gifts</p></header>
-<main>
-<h2>Welcome to GiftBox</h2>
-<p>Find the perfect gift for every occasion.</p>
-<a class="btn" href="https://wa.me/916238343639">Order on WhatsApp</a>
-</main>
-<footer>© 2026 GiftBox</footer>
-</body>
-</html>
+
+<header>
+<div class="logo">🎁 GiftBox.com</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+
+<section class="hero">
+
+<h1>Beautiful Gifts For Everyone</h1>
+
+<p>Jewellery • Stationery • Premium Gift Items</p>
+
+<a class="btn" href="#products">
+Shop Now
+</a>
+
+</section>
+
+
+<section class="products" id="products">
+
+<h2>Our Products</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="IMG_0768.png">
+<h3>Premium Gift Item</h3>
+<p class="price">₹299</p>
+<a class="order" href="#">
+Order on WhatsApp
+</a>
+</div>
