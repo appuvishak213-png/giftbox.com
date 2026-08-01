@@ -1,223 +1,163 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GiftBox.com</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header class="header">
-
-<div class="logo">
-🎁 GiftBox.com
-</div>
-
-<nav>
-
-<a href="#gift">Gift</a>
-
-<a href="#jewellery">Jewellery</a>
-
-<a href="#dress">Dress</a>
-
-<a href="#toys">Toys</a>
-
-</nav>
-
-</header>
-
-
-<!-- HERO -->
-
-<section class="hero">
-
-<div class="hero-text">
-
-<h1>GiftBox.com</h1>
-
-<p>Choose Your Best Products</p>
-
-<a href="#gift" class="shop-btn">
-Shop Now
-</a>
-
-</div>
-
-</section>
-
-
-<!-- GIFT -->
-
-<section id="gift" class="category">
-
-<h2>🎁 Gift</h2>
-
-<img src="images/gift-cover.jpg" class="cover">
-
-<div class="products">
-
-<!-- Products -->
-
-</div>
-
-<button class="more-btn">
-More
-</button>
-
-</section>
-
-
-
-<!-- JEWELLERY -->
-
-<section id="jewellery" class="category">
-
-<h2>💍 Jewellery</h2>
-
-<img src="images/jewellery-cover.jpg" class="cover">
-
-<div class="products">
-
-<!-- Products -->
-
-</div>
-
-<button class="more-btn">
-More
-</button>
-
-</section>
-
-
-
-<!-- DRESS -->
-
-<section id="dress" class="category">
-
-<h2>👗 Dress</h2>
-
-<img src="images/dress-cover.jpg" class="cover">
-
-<div class="products">
-
-<!-- Products -->
-
-</div>
-
-<button class="more-btn">
-More
-</button>
-
-</section>
-
-
-
-<!-- TOYS -->
-
-<section id="toys" class="category">
-
-<h2>🧸 Toys</h2>
-
-<img src="images/toys-cover.jpg" class="cover">
-
-<div class="products">
-
-<!-- Products -->
-
-</div>
-
-<button class="more-btn">
-More
-</button>
-
-</section>
-
-
-
-<!-- WHY -->
-
-<section class="why">
-
-<h2>⭐ Why Choose GiftBox</h2>
-
-<div class="why-grid">
-
-<div>
-🚚
-<h3>Fast Delivery</h3>
-</div>
-
-<div>
-🎁
-<h3>Premium Quality</h3>
-</div>
-
-<div>
-💯
-<h3>Trusted Store</h3>
-</div>
-
-<div>
-💬
-<h3>Easy WhatsApp Order</h3>
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- INSTAGRAM -->
-
-<section class="instagram">
-
-<h2>📷 Instagram</h2>
-
-<a href="#">
-@giftbox.com
-</a>
-
-</section>
-
-
-
-<!-- WHATSAPP -->
-
-<section class="whatsapp">
-
-<h2>💬 Join WhatsApp Group</h2>
-
-<a
-href="https://chat.whatsapp.com/KjrEu2ZnVQJ4qsvHv52657?mode=gi_t"
-target="_blank">
-
-Join Group
-
-</a>
-
-</section>
-
-
-
-<footer>
-
-<h2>GiftBox.com</h2>
-
-<p>Made with ❤️</p>
-
-<p>© 2026 GiftBox.com</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+/* ===== GiftBox Yellow & White Theme ===== */
+
+:root{
+    --yellow:#FFD43B;
+    --dark-yellow:#F4C400;
+    --white:#ffffff;
+    --black:#222222;
+    --gray:#f7f7f7;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:var(--white);
+    color:var(--black);
+}
+
+.header{
+    background:var(--yellow);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+}
+
+nav a{
+    color:var(--black);
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#000;
+}
+
+.hero{
+    background:linear-gradient(135deg,#FFF9DB,#FFFFFF);
+    min-height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero h1{
+    font-size:64px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+    color:#555;
+}
+
+.shop-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:var(--yellow);
+    color:#000;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.shop-btn:hover{
+    background:var(--dark-yellow);
+}
+
+.category{
+    padding:80px 8%;
+}
+
+.category h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:25px;
+}
+
+.cover{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:20px;
+    margin-bottom:30px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3,
+.card p{
+    padding:12px 18px;
+}
+
+.card a{
+    display:block;
+    background:var(--yellow);
+    color:#000;
+    text-align:center;
+    text-decoration:none;
+    padding:14px;
+    font-weight:600;
+}
+
+.more-btn{
+    display:block;
+    margin:35px auto 0;
+    background:var(--yellow);
+    color:#000;
+    border:none;
+    padding:14px 40px;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+footer{
+    background:var(--yellow);
+    text-align:center;
+    padding:40px 20px;
+    margin-top:60px;
+}
