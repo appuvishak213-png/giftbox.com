@@ -103,6 +103,64 @@
                 <div class="product-price">₹</div>
                 <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
             </div>
+            <!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gift Store</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+        body { background-color: #f9f9f9; }
+        header { background-color: #ff6b81; color: white; padding: 1.5rem; text-align: center; }
+        .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+        
+        /* Gift Section Style */
+        .gift-section { background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .section-title { text-align: center; margin-bottom: 2rem; color: #ff6b81; }
+        
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .product-card { border: 1px solid #eee; border-radius: 15px; padding: 1rem; text-align: center; }
+        .product-card img { max-width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem; }
+        
+        .product-title { font-size: 1.3rem; font-weight: bold; margin-bottom: 0.5rem; }
+        .product-price { color: #d32f2f; font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem; }
+        .add-to-cart { background-color: #ff6b81; color: white; border: none; padding: 12px; border-radius: 8px; cursor: pointer; width: 100%; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Gift Store</h1>
+    </header>
+
+    <div class="container">
+        <div class="gift-section">
+            <h2 class="section-title">🎁 Gift Section</h2>
+            
+            <div class="product-grid">
+                <!-- Sleeping Cat Lamp -->
+                <div class="product-card">
+                    <img src="cat_lamp.jpg" alt="Sleeping Cat Lamp">
+                    <div class="product-title">Sleeping Cat Lamp</div>
+                    <div class="product-price">₹299</div>
+                    <button class="add-to-cart" onclick="alert('Added to Cart!')">Add to Cart</button>
+                </div>
+
+                <!-- Chocolate Diary -->
+                <div class="product-card">
+                    <img src="choco_diary.jpg" alt="Chocolate Diary">
+                    <div class="product-title">Chocolate Diary</div>
+                    <div class="product-price">₹199</div>
+                    <button class="add-to-cart" onclick="alert('Added to Cart!')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
 
             <!-- Product 2 -->
             <div class="product-card">
