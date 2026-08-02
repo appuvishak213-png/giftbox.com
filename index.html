@@ -1,162 +1,135 @@
-/* ===== GiftBox Yellow & White Theme ===== */
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giftbox.com</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f9;
+        }
+        /* Header & Navbar */
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .cart-btn {
+            background-color: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        /* Product Grid */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product-title {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .product-price {
+            color: #16a34a;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        .add-to-cart {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+        .add-to-cart:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
 
-:root{
-    --yellow:#FFD43B;
-    --dark-yellow:#F4C400;
-    --white:#ffffff;
-    --black:#222222;
-    --gray:#f7f7f7;
-}
+    <header>
+        <div class="logo">giftbox.com</div>
+        <button class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+    </header>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
+    <div class="container">
+        <h2 style="margin-bottom: 1.5rem; text-align: center;">Our Products</h2>
+        
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Product 1">
+                <div class="product-title">T-Shirt</div>
+                <div class="product-price">₹499</div>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
 
-body{
-    background:var(--white);
-    color:var(--black);
-}
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Product 2">
+                <div class="product-title">Casual Shoes</div>
+                <div class="product-price">₹1,299</div>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
 
-.header{
-    background:var(--yellow);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Product 3">
+                <div class="product-title">Smart Watch</div>
+                <div class="product-price">₹2,499</div>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </div>
 
-.logo{
-    font-size:30px;
-    font-weight:700;
-}
+    <script>
+        let cartCount = 0;
+        function addToCart() {
+            cartCount++;
+            document.getElementById('cart-count').innerText = cartCount;
+            alert('Item added to cart!');
+        }
+    </script>
 
-nav a{
-    color:var(--black);
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:600;
-}
-
-nav a:hover{
-    color:#000;
-}
-
-.hero{
-    background:linear-gradient(135deg,#FFF9DB,#FFFFFF);
-    min-height:85vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px;
-}
-
-.hero h1{
-    font-size:64px;
-    margin-bottom:15px;
-}
-
-.hero p{
-    font-size:22px;
-    margin-bottom:30px;
-    color:#555;
-}
-
-.shop-btn{
-    display:inline-block;
-    padding:15px 35px;
-    background:var(--yellow);
-    color:#000;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:700;
-    transition:.3s;
-}
-
-.shop-btn:hover{
-    background:var(--dark-yellow);
-}
-
-.category{
-    padding:80px 8%;
-}
-
-.category h2{
-    text-align:center;
-    font-size:38px;
-    margin-bottom:25px;
-}
-
-.cover{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-    border-radius:20px;
-    margin-bottom:30px;
-}
-
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-}
-
-.card h3,
-.card p{
-    padding:12px 18px;
-}
-
-.card a{
-    display:block;
-    background:var(--yellow);
-    color:#000;
-    text-align:center;
-    text-decoration:none;
-    padding:14px;
-    font-weight:600;
-}
-
-.more-btn{
-    display:block;
-    margin:35px auto 0;
-    background:var(--yellow);
-    color:#000;
-    border:none;
-    padding:14px 40px;
-    border-radius:40px;
-    cursor:pointer;
-    font-size:16px;
-    font-weight:600;
-}
-
-footer{
-    background:var(--yellow);
-    text-align:center;
-    padding:40px 20px;
-    margin-top:60px;
-}
+</body>
+</html>
